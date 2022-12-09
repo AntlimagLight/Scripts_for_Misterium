@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function PanelToggleL(a){var b=a.attr('data'),c=a.css('margin-left');a.attr('data',c);a.stop().animate({'margin-left':b},500) }
+    </script>
+    <style>
+        #left-panel {
+            top: 420px;
+            padding:0;
+            margin-left:-290px;
+            position: absolute; z-index: 1000;
+            left: 0px;
+        }
+        .content-L {
+            padding: 12px;
+            width:236px;
+            height:536px;
+            margin-left: 14px;
+            margin-top: 18px;
+            position:absolute;
+            color:#1c1616;
+            background-color: #bfab8e;
+
+        }
+    </style>
+    <div data="0" id="left-panel">
+        <div class="content-L">
+
+
+            <a href="http://urchoice.rolka.su/" title="Ты еще не с нами?" target=_blank> <img src="http://forumstatic.ru/files/000b/09/4f/76237.gif" border="0" alt="Live Your Life"></a> <a href="http://wiedzmin.mybb.ru" target="blank"><img border=0 src='http://forumstatic.ru/files/0011/5f/87/48827.gif' alt="ВЕДЬМАК: Тень Предназначения"></a> <a href="http://codegeass.ru/" target="_blank" title="Code Geass"><img src="http://rom-brotherhood.ucoz.ru/CodeGeass/Piar/banner.gif" width="88" height="31" border="1" alt="Code Geass"></a> <a href='http://www.amalirr.ru/' target="top_" title="Амалирр ждёт своих героев!"><img src="http://amalirr.ru/banners/animalirr_compressed.gif" ></a> <a href="http://enteros.rusff.me/" title="ФРПГ Энтерос" target="blank"><img src="http://forumstatic.ru/files/0015/e5/72/84257.png"></a> <a href="https://dungeon.su/" title="DnD.su - Онлайн-справочник D&D 5e" target="blank"><img src="http://forumstatic.ru/files/0001/52/10/27325.png"></a>
+
+            <br>
+            <br>
+
+
+        </div>
+        <img id="img-left" src="http://misteriumbeta.f-rpg.ru/files/0013/72/be/28025.png" onclick="PanelToggleL($('#left-panel'))"/>
+    </div>
+</head>
+<body>
+
+</body>
+</html>

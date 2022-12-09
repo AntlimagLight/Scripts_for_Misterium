@@ -1,0 +1,23 @@
+<!--Статистика по подфорумам-->
+<script>
+    $('#secr2').html(parseInt($('#forum_f76 td.tc2').html()))
+    $('#secr3').html(parseInt($('#forum_f76 td.tc3').html()))
+    $('#ank2').html(parseInt($('#forum_f61 td.tc2').html()))
+    $('#idea2').html(parseInt($('#forum_f55 td.tc2').html()))
+    $('#idea3').html(parseInt($('#forum_f55 td.tc3').html()))
+    $('#jilup2').html(parseInt($('#forum_f124 td.tc2').html()))
+    $('#jilup3').html(parseInt($('#forum_f124 td.tc3').html()))
+    $('#jild2').html(parseInt($('#forum_f123 td.tc2').html()))
+    $('#jild3').html(parseInt($('#forum_f123 td.tc3').html()))
+    $('#bbz2').html(parseInt($('#forum_f125 td.tc2').html()))
+    $('#bbz3').html(parseInt($('#forum_f125 td.tc3').html()))
+    $('#bpp2').html(parseInt($('#forum_f127 td.tc2').html()))
+    $('#bpp3').html(parseInt($('#forum_f127 td.tc3').html()))
+    $('#ldd2').html(parseInt($('#forum_f129 td.tc2').html()))
+    $('#ldd3').html(parseInt($('#forum_f129 td.tc3').html()))
+    $('#str2').html(parseInt($('#forum_f80 td.tc2').html()))
+    $('#str3').html(parseInt($('#forum_f80 td.tc3').html()))
+    $('#con2').html(parseInt($('#forum_f143 td.tc2').html()))
+    $('#con3').html(parseInt($('#forum_f143 td.tc3').html()))
+    $('#urok2').html(parseInt($('#forum_f75 td.tc2').html()))
+</script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+</head>
+<body>
+<br>
+<br>
+<b>Сколько всего фундаментальных рун в предмете?</b><br><br>
+<label for="fundmental"></label><input id="fundmental" value="0"/>
+<br><br>
+<b>Сколько всего стихий в предмете?</b><br><br>
+<label for="elements"></label><input id="elements" value="1"/>
+<br><br>
+<b>Сколько пар противоположных стихий присутствует в предмете?</b><br><br>
+<label for="opposite"></label><input id="opposite" value="0"/>
+<br><br>
+<b>Есть ли в предмете заклинательные руны?</b><br><br>
+<label for="incantation"></label><input type="checkbox" id="incantation"/>
+<br>
+<br>
+
+<button onclick="func()">Произвести расчет</button>
+<br>
+<br>
+<p id="result"></p>
+
+
+<script>
+
+    function func() {
+
+        let result = 0;
+
+        let fund = Number(document.getElementById("fundmental").value);
+        let elems = Number(document.getElementById("elements").value);
+        let opps = Number(document.getElementById("opposite").value);
+        let spellrune = document.getElementById('incantation');
+
+        if (opps > elems / 2 || spellrune.checked && fund <= 0 || elems < 1 || fund < 0 || opps < 0 ) {
+            document.getElementById("result").innerHTML = '<big> Неверные данные </big>';
+            return;
+        }
+
+        for (let i = 0; i < fund; i++) {
+            result = result + i;
+        }
+        for (let i = 0; i < elems; i++) {
+            result = result + i;
+        }
+        result = result + opps * 2;
+        if (spellrune.checked) {
+            result = result + 4;
+        }
+
+        document.getElementById("result").innerHTML = ['<b><big> Необходимо рун-связок: ', String(result), ' </big></b>'].join('');
+    }
+</script>
+</body>
+</html>
